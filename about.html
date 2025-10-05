@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<h1tml>
+    <head>
+        <title>about</title>
+    </head>
+    <body style="font-family: sans-self; text-align: center; margin-top: 100px;">
+        <h1>About Me!!!</h1>
+        <p>This is the website Dan Wu</p>
+        <a href="/home">Go to Home Page</a>
+        <p>If you are weird you can go to error page</p>
+        <a href="/404">Go to Error Page</a>
+        <form action="/add-hobby" method="post">
+            <input type="text" name="hobby" placeholder="Enter your hobby" required>
+            <button type="submit">Add Hobby</button>
+        </form>
+
+    <div id="hobbies">
+        <h2>Hobby I like</h2>
+        <ul class="Hobby">
+        {{hobbies}}
+        </ul>
+    </div>
+    </body>
+</html>
+
+<style>
+.Hobby {
+  margin-top: 30px;
+  text-align: center; /* this centers the text and list */
+}
+
+.Hobby ul {
+  list-style-type: none; /* remove bullets */
+  padding: 0;
+  display: inline-block; /* centers the list itself */
+  text-align: left; /* keeps the items left-aligned inside the centered block */
+}
+
+.Hobby li {
+  font-size: 18px;
+  color: orange;
+  margin: 5px 0;
+}
+</style>
