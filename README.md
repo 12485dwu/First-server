@@ -1,2 +1,2 @@
 # First-server
-Practice and learn what is a server build a simple server with post and get 
+type npm start that it will start my program
